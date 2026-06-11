@@ -11,7 +11,7 @@
     5. 疑惑
         1. `%GOPATH%/bin` 中的工具包md5不对？ - Go是下载下源码，然后再编译出来的“专属”exe
         2. 我开VPN了，为什么下载失败？ - 需要修改Go环境的HTTP/HTTPS配置，但不方便修改，顾不建议。
-        3. 下载不下载 - 修改Go的代理配置 `o env -w GOPROXY=https://goproxy.cn,direct` （七牛云）
+        3. 下载不下来 - 修改Go的代理配置 `o env -w GOPROXY=https://goproxy.cn,direct` （七牛云）
         4. 我怎么知道是不是病毒？
             1. 七牛云保证了不会修改任何源码，只进行缓存下载等。
             2. Go保证了首次使用工具会进行验证，Go环境中有 `GOSUMDB=sum.golang.org` 或 `GOSUMDB=sum.golang.google.cn`
@@ -33,4 +33,5 @@
     3. 多态，java或类似语言中父类可以直接调用子类的方法，而go需要使用接口实现，来达到多态效果
     `Person p = new Student();p.study();//study是Student的方法`
     `type Person interface{study()} var p Person = Student{} p.study()//Person是接口，student需要实现study方法`
+5. go天然支持高并发，因为底层代码决定了。
     
