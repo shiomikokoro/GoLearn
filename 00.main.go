@@ -17,5 +17,5 @@ func main() {
 	// num2.size = 2
 	// formatNum(add(num, num2))
 
-	AlisaTest()
+	chorus()
 }
