@@ -1,4 +1,4 @@
-package part02__test
+package main
 
 //不必要的包体不能导入不然会报错
 
@@ -17,4 +17,5 @@ func main() {
 	// num2.size = 2
 	// formatNum(add(num, num2))
 
+	read1()
 }

@@ -34,5 +34,5 @@
     `Person p = new Student();p.study();//study是Student的方法`
     `type Person interface{study()} var p Person = Student{} p.study()//Person是接口，student需要实现study方法`
 5. go天然支持高并发，因为底层代码决定了。
-6. go的最大诟病就是异常处理，因为没有异常捕获机制，导致没调一个函数都要接一下函数的error数据，戏称Error是go的一等公民。
+6. go的最大诟病就是异常处理，因为没有异常捕获机制，导致每调一个函数都要接一下函数的error数据，戏称Error是go的一等公民。
     
