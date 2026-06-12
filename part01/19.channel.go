@@ -38,7 +38,7 @@ func startPay() {
 	for money := range moneyChan {
 		moneyList = append(moneyList, money)
 	}
-	wait.Wait()
+	// wait.Wait()
 	fmt.Println("all pay finished, spead ", time.Since(startTime))
 	fmt.Println("got ", moneyList, "dollors")
 }
